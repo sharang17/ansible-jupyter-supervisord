@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-jupyter-supervisord.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-jupyter-supervisord)
+[![CircleCI](https://circleci.com/gh/fouadsemaan/ansible-jupyter-supervisord.svg?style=svg)](https://circleci.com/gh/fouadsemaan/ansible-jupyter-supervisord)
 andrewrothstein.jupyter-supervisord
 =========
 
