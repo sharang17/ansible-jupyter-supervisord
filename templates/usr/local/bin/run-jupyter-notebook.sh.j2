@@ -6,4 +6,11 @@ source activate {{jupyter_supervisord_name}}
 source {{env_file}}
 {% endfor %}
 
+{% if jupyter_supervisord_pyspark %}
 $SPARK_HOME/bin/pyspark
+{% else %}
+jupyter notebook \
+  --config={{jupyter_supervisord_profile_py}} \
+ 	--Session.username={{jupyter_supervisord_username}} {% if jupyter_supervisord_notebook_dir is defined %} \
+  --NotebookApp.notebook_dir={{jupyter_supervisord_notebook_dir}} {% endif %}
+{% endif %}
