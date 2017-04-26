@@ -1,5 +1,5 @@
 [![CircleCI](https://circleci.com/gh/fouadsemaan/ansible-jupyter-supervisord.svg?style=svg)](https://circleci.com/gh/fouadsemaan/ansible-jupyter-supervisord)
-andrewrothstein.jupyter-supervisord
+fouadsemaan.jupyter-supervisord
 =========
 
 Installs a supervisord program specification for a Jupyter notebook
