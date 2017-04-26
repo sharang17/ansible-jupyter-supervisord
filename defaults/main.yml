@@ -2,6 +2,8 @@
 jupyter_supervisord_name: jupyter
 jupyter_supervisord_environment: environment.yml
 
+jupyter_supervisord_pyspark: False
+
 jupyter_supervisord_conda_root: /usr/local/anaconda
 jupyter_supervisord_username: root
 
