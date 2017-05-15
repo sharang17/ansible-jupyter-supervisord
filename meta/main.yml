@@ -32,7 +32,7 @@ dependencies:
     version: v1.0.0
   - role: fouadsemaan.spark
     version: v2.0.3
-    spark_mirror_url: '{{spark_mirror_url}}
+    spark_mirror_url: '{{spark_mirror_url}}'
     spark_timeout: '{{spark_timeout}}'
     jupyter_supervisord_username: '{{jupyter_supervisord_username}}'
     jupyter_supervisord_notebook_dir: '{{jupyter_supervisord_notebook_dir}}'
