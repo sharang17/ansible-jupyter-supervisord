@@ -34,9 +34,6 @@ dependencies:
     version: v2.0.3
     spark_mirror_url: '{{jupyter_spark_mirror_url}}'
     spark_timeout: '{{jupyter_spark_timeout}}'
-    jupyter_supervisord_username: '{{jupyter_supervisord_username}}'
-    jupyter_supervisord_notebook_dir: '{{jupyter_supervisord_notebook_dir}}'
-    jupyter_supervisord_profile_py: '{{jupyter_supervisord_profile_py}}'
     spark_envs:
       PYTHONPATH : '{{jupyter_spark_python_path}}'
       SPARK_OPTS : '{{jupyter_spark_opts}}'
