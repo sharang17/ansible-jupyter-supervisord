@@ -44,12 +44,14 @@ dependencies:
       PYSPARK_PYTHON : '{{jupyter_spark_pyspark_python}}'
       PYSPARK_DRIVER_PYTHON_OPTS : 'notebook --config={{jupyter_supervisord_profile_py}} --Session.username={{jupyter_supervisord_username}} {% if jupyter_supervisord_notebook_dir is defined %} --NotebookApp.notebook_dir={{jupyter_supervisord_notebook_dir}} {% endif %}'
   - role: andrewrothstein.jupyter-profile
-    version: v3.1.5
+    version: v4.0.0
     jupyter_profile_name: '{{jupyter_supervisord_name}}'
     jupyter_profile_environment: '{{jupyter_supervisord_environment}}'
     jupyter_profile_conda_cleanup: '{{jupyter_supervisord_conda_cleanup}}'
+    jupyter_profile_privilege_escalate: '{{jupyter_supervisord_privilege_escalate}}'
+    jupyter_profile_addl_pkgs: '{{jupyter_supervisord_addl_pkgs|default(jupyter_supervisord_dflt_addl_pkgs)}}'
   - role: andrewrothstein.supervisord-program
-    version: v1.0.3
+    version: v1.0.4
     supervisord_program_name: jupyter
     supervisord_program_command: /usr/local/bin/run-jupyter-notebook.sh
     supervisord_username: '{{jupyter_supervisord_username}}'
