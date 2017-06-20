@@ -31,7 +31,7 @@ dependencies:
   - role: andrewrothstein.java-openjdk-jre
     version: v1.0.0
   - role: fouadsemaan.spark
-    version: v2.0.3
+    version: v2.0.5
     spark_mirror_url: '{{jupyter_spark_mirror_url}}'
     spark_timeout: '{{jupyter_spark_timeout}}'
     spark_envs:
