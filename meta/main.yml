@@ -38,7 +38,7 @@ dependencies:
     jupyter_profile_conda_cleanup: '{{jupyter_supervisord_conda_cleanup}}'
     jupyter_profile_privilege_escalate: '{{jupyter_supervisord_privilege_escalate}}'
     jupyter_profile_addl_pkgs: '{{jupyter_supervisord_addl_pkgs|default(jupyter_supervisord_dflt_addl_pkgs)}}'
-  - role: andrewrothstein.supervisord-program
+  - role: sharang17.supervisord-program
     version: v1.0.4
     supervisord_program_name: jupyter
     supervisord_program_command: /usr/local/bin/run-jupyter-notebook.sh
