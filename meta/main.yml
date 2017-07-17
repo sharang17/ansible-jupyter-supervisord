@@ -54,4 +54,5 @@ dependencies:
     version: v1.0.4
     supervisord_program_name: jupyter
     supervisord_program_command: /usr/local/bin/run-jupyter-notebook.sh
+    supervisord_program_autorestart: '{{jupyter_spark_supervisord_autorestart}}'
     supervisord_username: '{{jupyter_supervisord_username}}'
