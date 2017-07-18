@@ -43,4 +43,6 @@ dependencies:
     supervisord_program_name: jupyter
     supervisord_program_command: /usr/local/bin/run-jupyter-notebook.sh
     supervisord_username: '{{jupyter_supervisord_username}}'
-    supervisord_program_redirect_stderr: redirect_stderr_flag
+    supervisord_errlog: /var/log/supervisor/err_supervisord.log
+    supervisord_outlog: /var/log/supervisor/out_supervisord.log
+    
