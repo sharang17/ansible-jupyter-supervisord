@@ -45,3 +45,4 @@ dependencies:
     supervisord_username: '{{jupyter_supervisord_username}}'
     supervisord_program_stderr_logfile: /var/log/supervisor/err_supervisord.log
     supervisord_program_stdout_logfile: /var/log/supervisor/out_supervisord.log
+    supervisord_program_redirect_stderr: true
