@@ -8,9 +8,11 @@ jupyter_supervisord_username: root
 jupyter_supervisord_privilege_escalate: True
 
 jupyter_supervisord_conda_cleanup: False
-jupyter_supervisord_program_stderr_logfile: /var/log/supervisor/err_supervisord.log
-jupyter_supervisord_program_stdout_logfile: /var/log/supervisor/out_supervisord.log
-jupyter_supervisord_program_redirect_stderr: false
+#Uncomment jupyter_supervisord_program_stderr_logfile and jupyter_supervisord_program_stdout_logfile variables to enable custom log redirection to the mentioned path
+#this will add redirect the stderr and stdout logs to the specified path 
+#jupyter_supervisord_program_stderr_logfile: /var/log/supervisor/err_supervisord.log
+#jupyter_supervisord_program_stdout_logfile: /var/log/supervisor/out_supervisord.log
+#jupyter_supervisord_program_redirect_stderr: false
 
 # List set of environment files to load
 #jupyter_supervisord_env_files:
