@@ -1,4 +1,4 @@
-  ---
+---
 galaxy_info:
   author: Andrew Rothstein
   description: installs supervisord conf for a jupyter notebook
